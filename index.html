@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografis Lengkap: Dunia Broadcasting & Perfilman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F4F8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .flowchart-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            min-height: 100px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .flowchart-step:hover {
+            transform: translateY(-5px);
+        }
+        .flowchart-arrow {
+            font-size: 2.5rem;
+            color: #7D3CF8;
+            align-self: center;
+            margin: 0 1rem;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 2.5rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #7D3CF8;
+            border-radius: 2px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0.5rem;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #00A6ED;
+            border: 4px solid #7D3CF8;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="text-[#3E363F]">
+
+    <!-- Chosen Color Palette: Energetic & Playful -->
+    <!-- Neither Mermaid JS nor SVG were used anywhere in the output. -->
+
+    <header class="bg-[#00A6ED] text-white text-center py-12 px-4">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight">🎬 Dunia Broadcasting & Perfilman</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto">Sebuah panduan lengkap untuk menjelajahi peluang karir dan usaha di industri kreatif yang dinamis dan penuh inovasi!</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        <div class="grid grid-cols-1 gap-8">
+
+            <!-- Section 1: Landscape of Creative Industry -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">🌐 Lanskap Industri Kreatif</h2>
+                <p class="mb-6 text-gray-600">Industri broadcasting dan perfilman adalah ekosistem yang luas, mencakup berbagai platform dari stasiun TV tradisional hingga platform digital modern. Visualisasi di bawah ini menunjukkan sebaran jenis industri yang menjadi arena bermain para kreator konten.</p>
+                <div class="chart-container h-[300px] md:h-[400px]">
+                    <canvas id="industryDonutChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Section 2: Production Flow -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">⚙️ Alur Produksi: Dari Ide ke Layar</h2>
+                <p class="mb-8 text-gray-600">Setiap karya audio visual lahir melalui tiga tahapan utama yang saling berkesinambungan. Memahami alur ini adalah kunci untuk mengetahui di mana peranmu paling bersinar dan bagaimana sebuah ide bisa menjadi kenyataan.</p>
+                <div class="flex flex-col md:flex-row justify-around items-center">
+                    <div class="flowchart-step bg-[#FFFD82]/50 text-[#3E363F] w-full md:w-1/4">Pra-Produksi<br/>(Perancangan Ide & Skrip)</div>
+                    <div class="flowchart-arrow transform md:rotate-0 rotate-90 my-4 md:my-0">→</div>
+                    <div class="flowchart-step bg-[#E84855]/50 text-[#3E363F] w-full md:w-1/4">Produksi<br/>(Eksekusi Syuting & Rekaman)</div>
+                    <div class="flowchart-arrow transform md:rotate-0 rotate-90 my-4 md:my-0">→</div>
+                    <div class="flowchart-step bg-[#00A6ED]/50 text-white w-full md:w-1/4">Pasca-Produksi<br/>(Penyelesaian & Publikasi)</div>
+                </div>
+            </section>
+
+            <!-- Section 3: Professions & Career Levels -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">👥 Ragam Profesi dan Jenjang Karir</h2>
+                <p class="mb-6 text-gray-600">Industri ini menawarkan berbagai peran dengan jenjang karir yang jelas, mulai dari level operator hingga eksekutif. Berikut adalah deskripsi singkat dari beberapa profesi kunci:</p>
+                <div class="mt-8 mb-6 space-y-4 text-gray-700">
+                    <p><strong class="text-[#7D3CF8]">Sutradara, Penulis Skenario, Produser (Pra-produksi):</strong> Mereka adalah otak di balik sebuah karya. <span class="font-semibold">Sutradara</span> mengarahkan visi artistik, <span class="font-semibold">Penulis Skenario</span> menciptakan cerita dan dialog, sementara <span class="font-semibold">Produser</span> mengelola seluruh proyek dari segi finansial dan logistik.</p>
+                    <p><strong class="text-[#7D3CF8]">Kameramen, Lighting, Soundman, Floor Director (Produksi):</strong> Tim inti di lapangan yang memastikan proses syuting berjalan lancar. <span class="font-semibold">Kameramen</span> mengoperasikan kamera, <span class="font-semibold">Lighting</span> mengatur pencahayaan, <span class="font-semibold">Soundman</span> merekam audio berkualitas, dan <span class="font-semibold">Floor Director</span> mengkoordinasikan aktivitas di lokasi syuting.</p>
+                    <p><strong class="text-[#7D3CF8]">Editor Video, Audio, VFX Artist (Pasca-produksi):</span> Para ahli yang menyulap rekaman mentah menjadi karya jadi. <span class="font-semibold">Editor Video</span> menyusun adegan, <span class="font-semibold">Editor Audio</span> menyempurnakan suara, dan <span class="font-semibold">VFX Artist</span> menciptakan efek visual yang menakjubkan.</p>
+                    <p><strong class="text-[#7D3CF8]">Line Producer, Production Manager (Manajerial):</strong> Bertanggung jawab atas operasional harian produksi. <span class="font-semibold">Line Producer</span> mengawasi anggaran dan jadwal, sedangkan <span class="font-semibold">Production Manager</span> mengelola logistik dan sumber daya manusia di lapangan.</p>
+                </div>
+                <div class="chart-container h-[450px]">
+                    <canvas id="professionsBarChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Section 4: Essential Skills -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">🔑 Keterampilan Wajib</h2>
+                <p class="mb-6 text-gray-600">Untuk sukses di industri ini, kamu butuh kombinasi keterampilan teknis dan soft skill. Ini adalah 'toolkit' dasar yang harus kamu asah:</p>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-center"><span class="text-2xl mr-4 text-[#00A6ED]">💬</span> <strong class="text-[#3E363F]">Komunikasi Efektif:</strong> Mampu menyampaikan ide dan menerima masukan dengan jelas.</li>
+                    <li class="flex items-center"><span class="text-2xl mr-4 text-[#00A6ED]">🤝</span> <strong class="text-[#3E363F]">Kerja Tim (Teamwork):</strong> Bekerja sama harmonis dengan berbagai individu.</li>
+                    <li class="flex items-center"><span class="text-2xl mr-4 text-[#00A6ED]">⏳</span> <strong class="text-[#3E363F]">Manajemen Waktu:</strong> Mengatur prioritas dan menyelesaikan tugas tepat waktu.</li>
+                    <li class="flex items-center"><span class="text-2xl mr-4 text-[#00A6ED]">💡</span> <strong class="text-[#3E363F]">Kreativitas & Problem Solving:</strong> Menghasilkan ide baru dan menemukan solusi inovatif.</li>
+                    <li class="flex items-center"><span class="text-2xl mr-4 text-[#00A6ED]">⚙️</span> <strong class="text-[#3E363F]">Penguasaan Teknologi:</strong> Mampu menggunakan alat dan perangkat lunak produksi.</li>
+                    <li class="flex items-center"><span class="text-2xl mr-4 text-[#00A6ED]">🎯</span> <strong class="text-[#3E363F]">Kedisiplinan & Tanggung Jawab:</strong> Komitmen tinggi terhadap pekerjaan dan hasil.</li>
+                </ul>
+            </section>
+
+            <!-- Section 5: Positive Work Culture -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">🏢 Budaya Kerja Positif di Industri Kreatif</h2>
+                <p class="mb-6 text-gray-600">Lingkungan kerja yang positif sangat penting untuk menghasilkan karya terbaik. Berikut adalah pilar-pilar budaya kerja yang akan kamu temui dan harus kamu terapkan:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3 text-[#E84855]">✅</span>
+                        <div>
+                            <strong class="text-[#3E363F]">Kerja Tepat Waktu dan Sesuai Target:</strong> Disiplin dalam memenuhi tenggat waktu dan mencapai tujuan produksi.
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3 text-[#E84855]">✅</span>
+                        <div>
+                            <strong class="text-[#3E363F]">Sikap Profesional dan Adaptif:</strong> Menjaga etika kerja tinggi dan siap beradaptasi dengan perubahan.
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3 text-[#E84855]">✅</span>
+                        <div>
+                            <strong class="text-[#3E363F]">Toleransi dan Inklusivitas:</strong> Menghargai keberagaman dan menciptakan lingkungan yang merangkul semua.
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3 text-[#E84855]">✅</span>
+                        <div>
+                            <strong class="text-[#3E363F]">Etika Kerja di Lapangan dan Studio:</strong> Mematuhi aturan dan norma saat bekerja di lokasi atau di dalam studio.
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3 text-[#E84855]">✅</span>
+                        <div>
+                            <strong class="text-[#3E363F]">Siap Belajar dan Berproses:</strong> Memiliki kemauan untuk terus mengembangkan diri dan menerima umpan balik.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6: Health & Safety (K3) -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">⚠️ Keselamatan dan Kesehatan Kerja (K3)</h2>
+                <p class="mb-6 text-gray-600">Keselamatan adalah prioritas utama! Melindungi kru produksi dari risiko kecelakaan kerja adalah tanggung jawab bersama. Pahami bahaya dan langkah pencegahannya:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#E84855] mb-2">Bahaya Umum:</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Kabel listrik terbuka atau tidak rapi</li>
+                            <li>Lampu panas yang dapat menyebabkan luka bakar</li>
+                            <li>Penggunaan alat berat tanpa pengawasan</li>
+                            <li>Medan atau lokasi syuting yang berbahaya (tidak rata, licin)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#00A6ED] mb-2">Langkah Pencegahan:</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Menggunakan APD (Alat Pelindung Diri) saat diperlukan</li>
+                            <li>Menghindari beban berlebih pada peralatan listrik</li>
+                            <li>Menjaga area produksi tetap aman dan tidak licin</li>
+                            <li>Menyimpan alat dengan rapi setelah digunakan</li>
+                        </ul>
+                        <h3 class="text-xl font-semibold text-[#FFFD82] mt-4 mb-2">Etika di Lokasi:</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Tidak mengganggu lingkungan sekitar</li>
+                            <li>Hormat terhadap budaya dan adat istiadat setempat</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 7: Creative Technopreneurship -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">🚀 Menjadi Technopreneur Kreatif</h2>
+                <p class="mb-6 text-gray-600">Technopreneurship adalah penggabungan antara teknologi, kreativitas, dan semangat kewirausahaan. Artinya, kamu bisa menciptakan usahamu sendiri dengan memanfaatkan teknologi dan ide-ide inovatif. Grafik radar ini menunjukkan elemen-elemen kunci yang membentuk seorang technopreneur di industri ini.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="chart-container h-[350px] md:h-[450px]">
+                        <canvas id="technopreneurRadarChart"></canvas>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#E84855] mb-2">Contoh Praktik:</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Mendirikan rumah produksi kecil berbasis sekolah atau komunitas.</li>
+                            <li>Membuat konten YouTube edukatif atau hiburan yang orisinal.</li>
+                            <li>Menyediakan jasa editing, voice over, atau pembuatan iklan digital.</li>
+                        </ul>
+                        <h3 class="text-xl font-semibold text-[#00A6ED] mt-4 mb-2">Tools yang Digunakan:</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Kamera Smartphone (dengan kualitas baik).</li>
+                            <li>Aplikasi Editing Gratis (CapCut, VN, Audacity).</li>
+                            <li>Platform Digital (YouTube, Instagram, Spotify, TikTok, dll).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 8: Creative Business Opportunities -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                 <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">💡 Peluang Usaha untuk Pemula</h2>
+                 <p class="mb-6 text-gray-600">Kamu tidak harus menunggu lulus untuk memulai! Ada banyak peluang usaha yang bisa dijalankan bahkan dari skala sekolah atau komunitas. Ukuran gelembung menunjukkan potensi aksesibilitasnya, semakin besar gelembung, semakin mudah untuk memulai.</p>
+                 <div class="chart-container h-[400px] md:h-[450px]">
+                    <canvas id="opportunitiesBubbleChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Section 9: Standard Operating Procedure (SOP) -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-[#7D3CF8] mb-4">📝 Prosedur Operasional Standar (POS) Produksi Audiovisual</h2>
+                <p class="mb-6 text-gray-600">Setiap produksi membutuhkan alur kerja yang terstruktur. Berikut adalah contoh SOP produksi film pendek, dari awal hingga akhir:</p>
+                <div class="timeline space-y-6 text-gray-700">
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">1. Pengumpulan Ide dan Riset:</strong> Mencari inspirasi dan mengumpulkan data pendukung.
+                    </div>
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">2. Penulisan Naskah:</strong> Mengembangkan cerita, dialog, dan adegan.
+                    </div>
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">3. Breakdown Kebutuhan Produksi:</strong> Merinci semua alat, lokasi, dan kru yang diperlukan.
+                    </div>
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">4. Penyusunan Jadwal Shooting:</strong> Membuat jadwal rinci untuk proses pengambilan gambar.
+                    </div>
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">5. Pengumpulan Kru dan Alat:</strong> Mempersiapkan tim dan semua perlengkapan.
+                    </div>
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">6. Produksi (Shooting):</strong> Proses pengambilan gambar dan suara di lokasi.
+                    </div>
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">7. Editing dan Mixing:</strong> Menyunting video, audio, dan menambahkan efek.
+                    </div>
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">8. Revisi dan Publikasi:</strong> Melakukan perbaikan dan meluncurkan karya.
+                    </div>
+                    <div class="timeline-item relative">
+                        <strong class="text-[#3E363F]">9. Evaluasi dan Dokumentasi Akhir:</strong> Menilai hasil dan mendokumentasikan proses.
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section 10: Local Culture as Inspiration -->
+            <section class="bg-[#3E363F] text-white rounded-lg shadow-md p-8 text-center">
+                <h2 class="text-3xl font-bold text-[#FFFD82] mb-4">🎭 Jadikan Budaya dan Kearifan Lokal Inspirasimu!</h2>
+                <p class="max-w-3xl mx-auto text-lg mb-4">Indonesia kaya akan potensi lokal yang bisa menjadi sumber ide tak terbatas untuk karyamu. Cerita rakyat, tradisi, musik, hingga tokoh inspiratif di sekitarmu adalah permata yang menunggu untuk diangkat.</p>
+                <h3 class="text-xl font-semibold text-[#00A6ED] mb-2">Contoh Ide Produksi Berbasis Lokal:</h3>
+                <ul class="list-disc list-inside inline-block text-left text-gray-200">
+                    <li>Film pendek “Sahabat dari Desa” tentang toleransi antar suku.</li>
+                    <li>Podcast “Cerita Kampungku” berisi dongeng dari berbagai daerah.</li>
+                    <li>Video dokumenter “Dibalik Topeng Reog Ponorogo” yang mengungkap makna budaya.</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-6 px-4 text-gray-500">
+        <p>Infografis Interaktif untuk Siswa Kreatif &copy; 2025</p>
+    </footer>
+
+    <script>
+        // Function to wrap long labels for Chart.js
+        const wrapLabel = (label, maxLength = 16) => {
+            if (label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            let currentLine = '';
+            const lines = [];
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        };
+
+        // Tooltip callback for Chart.js to handle wrapped labels
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        // Common Chart.js options for responsiveness and styling
+        const sharedChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#3E363F',
+                        font: {
+                            family: "'Inter', sans-serif",
+                            size: 14
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    backgroundColor: '#3E363F',
+                    titleFont: {
+                        size: 16,
+                        family: "'Inter', sans-serif"
+                    },
+                    bodyFont: {
+                        size: 14,
+                        family: "'Inter', sans-serif"
+                    }
+                }
+            }
+        };
+
+        // Initialize Donut Chart for Industry Distribution
+        function initIndustryDonutChart() {
+            const ctx = document.getElementById('industryDonutChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Stasiun TV Nasional & Lokal', 'Rumah Produksi (Production House)', 'Platform Digital (YouTube, TikTok, Netflix)', 'Radio Komunitas & Siaran Daring', 'Studio Podcast & Audio Visual'],
+                    datasets: [{
+                        label: 'Distribusi Jenis Industri',
+                        data: [25, 30, 20, 15, 10], // Example distribution
+                        backgroundColor: ['#00A6ED', '#7D3CF8', '#E84855', '#FFFD82', '#4CAF50'],
+                        borderColor: '#F0F4F8',
+                        borderWidth: 4,
+                        hoverOffset: 8
+                    }]
+                },
+                options: { ...sharedChartOptions }
+            });
+        }
+
+        // Initialize Bar Chart for Professions and Career Levels
+        function initProfessionsBarChart() {
+            const ctx = document.getElementById('professionsBarChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [
+                        wrapLabel('Sutradara, Penulis Skenario, Produser'),
+                        wrapLabel('Kameramen, Lighting, Soundman, Floor Director'),
+                        wrapLabel('Editor Video, Audio, VFX Artist'),
+                        wrapLabel('Line Producer, Production Manager')
+                    ],
+                    datasets: [{
+                        label: 'Level Pekerjaan (Skala: 1=Junior, 5=Eksekutif)',
+                        data: [4.5, 3, 3.5, 4], // Senior, Operator-Supervisor, Junior-Senior, Supervisor-Eksekutif
+                        backgroundColor: '#00A6ED',
+                        borderColor: '#007AB5',
+                        borderWidth: 1,
+                        borderRadius: 5
+                    }]
+                },
+                options: {
+                    ...sharedChartOptions,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 5,
+                            ticks: {
+                                color: '#3E363F',
+                                callback: function(value) {
+                                    const levels = {1: 'Junior', 2: 'Operator', 3: 'Supervisor', 4: 'Senior', 5: 'Eksekutif'};
+                                    return levels[Math.round(value)] || '';
+                                }
+                            }
+                        },
+                        y: {
+                            ticks: {
+                                color: '#3E363F',
+                                font: { size: 12 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize Radar Chart for Technopreneur Elements
+        function initTechnopreneurRadarChart() {
+            const ctx = document.getElementById('technopreneurRadarChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Teknologi', 'Kreativitas', 'Kewirausahaan', 'Manajemen Proyek', 'Jaringan', 'Inovasi'],
+                    datasets: [{
+                        label: 'Kekuatan Technopreneur',
+                        data: [90, 95, 80, 75, 85, 90], // Example scores
+                        fill: true,
+                        backgroundColor: 'rgba(232, 72, 85, 0.2)',
+                        borderColor: '#E84855',
+                        pointBackgroundColor: '#E84855',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#E84855'
+                    }]
+                },
+                options: {
+                    ...sharedChartOptions,
+                    scales: {
+                        r: {
+                            angleLines: { color: '#ddd' },
+                            grid: { color: '#ddd' },
+                            pointLabels: {
+                                font: { size: 14, weight: '600' },
+                                color: '#3E363F'
+                            },
+                            ticks: {
+                                backdropColor: 'transparent',
+                                color: '#777',
+                                display: false // Hide numerical ticks
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Initialize Bubble Chart for Business Opportunities
+        function initOpportunitiesBubbleChart() {
+            const ctx = document.getElementById('opportunitiesBubbleChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Jasa Produksi Video (Iklan, Konten Sekolah)',
+                        data: [{x: 10, y: 20, r: 25}], // r = accessibility/ease of entry
+                        backgroundColor: 'rgba(0, 166, 237, 0.7)'
+                    }, {
+                        label: 'Studio Podcast atau Streaming Sekolah',
+                        data: [{x: 15, y: 10, r: 30}],
+                        backgroundColor: 'rgba(125, 60, 248, 0.7)'
+                    }, {
+                        label: 'Jasa Penulisan Naskah dan Voice Over',
+                        data: [{x: 22, y: 18, r: 20}],
+                        backgroundColor: 'rgba(232, 72, 85, 0.7)'
+                    }, {
+                        label: 'Event Dokumentasi Sekolah atau Komunitas',
+                        data: [{x: 5, y: 5, r: 35}],
+                        backgroundColor: 'rgba(255, 253, 130, 0.8)'
+                    }, {
+                        label: 'Webseries Budaya Lokal',
+                        data: [{x: 25, y: 5, r: 22}],
+                        backgroundColor: 'rgba(76, 175, 80, 0.7)'
+                    }, {
+                        label: 'Channel Konten Edukasi (Edutainment)',
+                        data: [{x: 18, y: 25, r: 28}],
+                        backgroundColor: 'rgba(255, 159, 64, 0.7)' // Orange
+                    }]
+                },
+                options: {
+                    ...sharedChartOptions,
+                    scales: {
+                        x: {
+                            display: false,
+                            min: 0,
+                            max: 30
+                        },
+                        y: {
+                            display: false,
+                            min: 0,
+                            max: 30
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize all charts when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            initIndustryDonutChart();
+            initProfessionsBarChart();
+            initTechnopreneurRadarChart();
+            initOpportunitiesBubbleChart();
+        });
+    </script>
+</body>
+</html>
